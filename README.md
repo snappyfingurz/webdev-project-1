@@ -22,30 +22,28 @@ Start your day with profound philosophical insights! **Stoic Quotes** is a web a
 
 Follow these simple steps to run the project locally:
 
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
+2. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-2.  **Install dependencies**
-    ```bash
-    npm install
-    ```
-
-3.  **Start the development server**
-    ```bash
-    npm run dev
-    ```
-
-4.  **Open your browser**
-    Navigate to the local URL shown in your terminal (usually `http://localhost:5173`).
+3. **Open your browser**
+   Navigate to the local URL shown in your terminal (usually `http://localhost:5173`).
 
 ## 🤝 Contributing
 
 Contributions are welcome! If you have ideas for new features, feel free to open an issue or submit a pull request.
 
-1.  Fork the project
-2.  Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📝 License
 
