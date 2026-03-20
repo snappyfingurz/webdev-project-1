@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-300 font-serif m-0 p-0;
+  }
+}
+
+@layer components {
+  /* App.jsx & General */
+  .the_whole_enchilada {
+    @apply min-h-screen bg-zinc-950 text-zinc-300 font-serif selection:bg-zinc-800 selection:text-zinc-100;
+  }
+  
+  .the_middle_part {
+    @apply max-w-4xl mx-auto px-4;
+  }
+  
+  .the_quote_wrapper {
+    @apply py-16 md:py-24 scroll-mt-20;
+  }
+  
+  /* Typography */
+  .the_super_small_label {
+    @apply inline-block bg-zinc-900 border border-zinc-700/50 text-zinc-400 px-5 py-2 rounded-none text-xs font-bold tracking-[0.2em] mb-6 shadow-sm uppercase;
+  }
+  
+  .the_titleee {
+    @apply text-3xl md:text-5xl font-normal text-zinc-100 tracking-tight font-serif mb-2;
+  }
+  
+  /* Navbar.jsx */
+  .the_top_bar_thingy {
+    @apply sticky top-0 z-50 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-900/80 py-4 px-6 shadow-sm transition-all;
+  }
+  
+  .the_logo_text {
+    @apply text-xl font-bold text-zinc-200 tracking-widest uppercase font-serif drop-shadow-sm;
+  }
+  
+  .this_color_thing {
+    @apply bg-zinc-900 text-zinc-300 border border-zinc-800 px-5 py-2 rounded-none text-sm font-bold shadow-sm flex items-center gap-2 hover:bg-zinc-800 transition-colors cursor-pointer tracking-wider;
+  }
+  
+  /* HeroSection.jsx */
+  .the_big_hero_box {
+    @apply relative h-[70vh] flex items-center justify-center bg-zinc-950 border-b border-zinc-900 overflow-hidden;
+  }
+  
+  .the_dark_overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-zinc-950/70 to-zinc-950/95 z-10 backdrop-blur-[1px];
+  }
+  
+  .the_hero_content {
+    @apply relative z-20 text-center px-4 max-w-3xl flex flex-col items-center justify-center -mt-10;
+  }
+  
+  .the_main_hero_text {
+    @apply text-5xl md:text-7xl font-normal text-zinc-100 leading-tight drop-shadow-lg mb-8 tracking-tight font-serif;
+  }
+  
+  .the_hero_subtext {
+    @apply text-xl md:text-2xl text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed border-l-2 border-zinc-700 pl-6 text-left italic;
+  }
+  
+  .the_scrollthing {
+    @apply absolute bottom-12 left-1/2 transform -translate-x-1/2 z-30 text-zinc-600 hover:text-zinc-300 transition-all cursor-pointer hover:scale-110;
+  }
+  
+  /* QuoteCard.jsx */
+  .the_floating_card {
+    @apply bg-zinc-900/40 p-10 md:p-16 rounded-none shadow-2xl border border-zinc-800 relative overflow-hidden text-center transition-all duration-500 hover:border-zinc-700 hover:bg-zinc-900/60;
+  }
+  
+  .the_big_quote_marks {
+    @apply absolute text-[12rem] text-zinc-800/20 font-serif select-none pointer-events-none leading-none -mt-10;
+  }
+  
+  .the_actual_quote_text {
+    @apply text-2xl md:text-4xl font-serif text-zinc-200 mb-12 leading-relaxed max-w-3xl mx-auto relative z-10 italic;
+  }
+
+  .the_divider_thing {
+    @apply h-[1px] w-24 bg-zinc-800 mx-4;
+  }
+  
+  .the_author_name {
+    @apply font-bold text-zinc-400 text-lg uppercase tracking-[0.2em];
+  }
+  
+  .bhaaaa {
+    @apply flex flex-wrap gap-6 justify-center mt-12 relative z-10;
+  }
+  
+  .the_clicky_button {
+    @apply bg-zinc-900 text-zinc-300 border border-zinc-700 px-8 py-4 rounded-none font-bold hover:bg-zinc-800 hover:text-zinc-100 transition-all shadow-md flex items-center gap-3 uppercase tracking-wider text-xs;
+  }
+  
+  .the_save_button {
+    @apply px-8 py-4 rounded-none font-bold transition-all flex items-center gap-3 border shadow-md uppercase tracking-wider text-xs;
+  }
+  
+  .the_saved_state {
+    @apply bg-zinc-200 text-zinc-900 border-zinc-200 hover:bg-zinc-300;
+  }
+  
+  .the_unsaved_state {
+    @apply bg-zinc-950 text-zinc-400 border-zinc-800 hover:border-zinc-500 hover:text-zinc-200;
+  }
+  
+  /* LikedQuotesList.jsx */
+  .the_collection_box {
+    @apply bg-zinc-900/20 p-8 md:p-12 rounded-none border border-zinc-900;
+  }
+  
+  .the_search_input {
+    @apply w-full p-5 pl-12 border border-zinc-800 bg-zinc-950 rounded-none focus:outline-none focus:ring-1 focus:ring-zinc-600 focus:border-zinc-600 transition-all text-zinc-200 placeholder-zinc-600 font-sans tracking-wide;
+  }
+  
+  .the_list_item {
+    @apply bg-zinc-900/40 p-8 border border-zinc-800 hover:border-zinc-700 transition-all flex flex-col md:flex-row md:items-center justify-between gap-8 rounded-none;
+  }
+  
+  .the_empty_state_box {
+    @apply text-center py-20 bg-zinc-950 border border-zinc-900 rounded-none;
+  }
+  
+  .the_remove_btn {
+    @apply bg-zinc-950 text-zinc-500 border border-zinc-800 hover:bg-zinc-900 hover:text-zinc-300 hover:border-zinc-600 px-6 py-3 rounded-none font-bold text-xs uppercase tracking-widest transition-all flex items-center gap-2 shrink-0;
+  }
+  
+  /* Footer.jsx */
+  .the_bottom_footer {
+    @apply bg-zinc-950 border-t border-zinc-900 py-16 text-center mt-12;
+  }
+}
